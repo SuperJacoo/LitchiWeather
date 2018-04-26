@@ -1,0 +1,30 @@
+<!--user.wxml-->
+<view class="container">
+  <view class="normal_weather">
+    <view>
+      <view>
+        <view class='cond_txt_title'>
+          <text class='title'>●</text>
+          <text>　作者微信（3ys、）</text>
+        </view>
+        <view class='cond_txt_1'>
+          <text>xiao503814588</text>
+        </view>
+        <view class='cond_txt_title'>
+          <text class='title'>●</text>
+          <text>　作者留言</text>
+        </view>
+        <view class='cond_txt_1'>
+          <text>荔枝——致力于至简便捷生活服务。</text>
+        </view>
+        <view class='cond_txt_title'>
+          <text class='title'>●</text>
+          <text>　荔枝天气下一个版本</text>
+        </view>
+        <view class='cond_txt_1'>
+          <text>荔枝天气下一个版本将加入其他城市天气搜索以及主题更换等功能，敬请期待。</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

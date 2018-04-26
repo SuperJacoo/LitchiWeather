@@ -1,0 +1,23 @@
+<!--user.wxml-->
+<view class="container">
+  <view class="normal_weather">
+    <view>
+      <view>
+        <view class='cond_txt_title'>
+          <text class='title'>●</text>
+          <text>　荔枝天气的天气ICON</text>
+        </view>
+        <view class='cond_txt_1'>
+          <text>荔枝天气采用署名-非商业性使用 3.0 中国大陆 (CC BY-NC 3.0 CN)许可协议授权,包含了57项天气状况。</text>
+        </view>
+        <view class='cond_txt_title'>
+          <text class='title'>●</text>
+          <text>　荔枝天气的天气指数数据</text>
+        </view>
+        <view class='cond_txt_1'>
+          <text>点击荔枝天气天气指数播报模块，进入天气指数详情页面查看丰富的天气指数数据。</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

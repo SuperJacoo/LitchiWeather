@@ -1,0 +1,133 @@
+/**index.wxss**/
+page {
+  background-color: #FFF;
+}
+.container {
+ height: 100%;
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: space-between;
+ padding: 10px 15px;
+ box-sizing: border-box;
+} 
+.weather{
+ height: 110px;
+ width: 100%;
+ margin-bottom: 10px;
+ border-radius: 5px;
+ color: #666666;
+ display: flex;
+ text-align: center;
+ padding: 20px 30px;
+ font-size: 14px;
+ box-sizing: border-box;
+}
+.now_weather{
+ height: 100%;
+ width: 100%;
+ margin-bottom: 10px;
+ border-radius: 5px;
+ color: #666666;
+ display: flex;
+ font-size: 14px;
+ text-align: center;
+ box-sizing: border-box;
+ background-color: #FFF;
+}
+.normal_weather{
+ min-height:420px;
+ height: 100%;
+ width: 100%;
+ margin-bottom: 10px;
+ border-radius: 5px;
+ color: #666666;
+ display: flex;
+ font-size: 14px;
+ padding: 20px 30px;
+ box-sizing: border-box;
+ background-color: #FFF;
+}
+.swiper_weather{
+ height: 100%;
+ width: 100%;
+ margin-bottom: 10px;
+ border-radius: 5px;
+ color: #666666;
+ display: flex;
+ font-size: 14px;
+ padding: 20px 30px;
+ box-sizing: border-box;
+ background-color: #FFF;
+}
+.weather>view,.now_weather>view{
+ flex: 1;
+}
+.weather>view>view,.now_weather>view>view{
+ margin: 5px 0;
+}
+.yesterday{
+ background-color: #FFF;
+}
+.today{
+ background-color: #FFF;
+}
+.tomorrow{
+ background-color: #FFF;
+}
+.cond_txt{
+ font-size: 13px;
+ margin-top: 10px;
+ margin-bottom: 20px;
+}
+.cond_txt_1{
+ font-size: 13px;
+ margin-bottom: 10px;
+ line-height:25px;
+ color: #848587;
+}
+.cond_txt_title{
+ font-size: 14px;
+ margin-top: 20px;
+ margin-bottom: 10px;
+}
+.cond_txt_text{
+ font-size: 14px;
+ margin-bottom: 3px;
+ color: #333333;
+}
+.cond_txt_text_content{
+ font-size: 14px;
+ margin-bottom: 3px;
+ color: #F6CB2D;
+}
+.date,.tmp{
+ font-weight: bold;
+}
+.now_tmp{
+ font-size: 40px;
+}
+.weather_icon{
+ text-align: center;
+ height: 65px;
+}
+.image{
+ width: 75px;
+ height: 65px;
+}
+.lastUpdateDate{
+ font-size: 10px;
+ text-align: center;
+}
+.swiper{
+    width:100%;
+    height: 100%;
+    margin:0rpx;
+    margin-bottom: 10px;
+}
+
+text.title{
+  list-style-type: disc;
+  color: #FFD700
+}

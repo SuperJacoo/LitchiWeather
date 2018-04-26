@@ -1,0 +1,39 @@
+<!--user.wxml-->
+<view class="container">
+  <view class="normal_weather">
+    <view>
+      <view>
+        <view bindtap="useSkillsDetail" class='cond_txt_1'>
+          <text><text class='title'>●</text> 体感温度</text><text style='position:absolute;right:40px;color: #FFD700'>{{now.fl}} ℃</text>
+        </view>
+         <view bindtap="useSkillsDetail" class='cond_txt_1'>
+          <text><text class='title'>●</text> 风向360角度</text><text style='position:absolute;right:40px;color: #FFD700'>{{now.wind_deg}}</text>
+        </view>
+         <view bindtap="useSkillsDetail" class='cond_txt_1'>
+          <text><text class='title'>●</text> 	风向</text><text style='position:absolute;right:40px;color: #FFD700'>{{now.wind_dir}}</text>
+        </view>
+         <view bindtap="useSkillsDetail" class='cond_txt_1'>
+          <text><text class='title'>●</text> 风力</text><text style='position:absolute;right:40px;color: #FFD700'>{{now.wind_sc}}</text>
+        </view>
+         <view bindtap="useSkillsDetail" class='cond_txt_1'>
+          <text><text class='title'>●</text> 	风速</text><text style='position:absolute;right:40px;color: #FFD700'>{{now.wind_spd}} km/h</text>
+        </view>
+        <view bindtap="useSkillsDetail" class='cond_txt_1'>
+          <text><text class='title'>●</text> 相对湿度</text><text style='position:absolute;right:40px;color: #FFD700'>{{now.hum}}</text>
+        </view>
+         <view bindtap="useSkillsDetail" class='cond_txt_1'>
+          <text><text class='title'>●</text> 降水量</text><text style='position:absolute;right:40px;color: #FFD700'>{{now.pcpn}}</text>
+        </view>
+         <view bindtap="useSkillsDetail" class='cond_txt_1'>
+          <text><text class='title'>●</text> 大气压强</text><text style='position:absolute;right:40px;color: #FFD700'>{{now.pres}}</text>
+        </view>
+         <view bindtap="useSkillsDetail" class='cond_txt_1'>
+          <text><text class='title'>●</text> 能见度</text><text style='position:absolute;right:40px;color: #FFD700'>{{now.vis}} km</text>
+        </view>
+         <view bindtap="useSkillsDetail" class='cond_txt_1'>
+          <text><text class='title'>●</text> 云量</text><text style='position:absolute;right:40px;color: #FFD700'>{{now.cloud}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,38 @@
+{
+  "pages":[
+    
+    "pages/index/index",
+    "pages/aboutus/aboutus",
+    "pages/detail/datafrom/datafrom",
+    "pages/detail/useskills/useskills",
+    "pages/detail/lifestyle/lifestyle",
+    "pages/detail/aboutme/aboutme",
+    "pages/logs/logs",
+    "pages/location/location"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "荔枝天气",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#d81e06",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "weather",
+        "iconPath": "imgs/tabbar/weather_icon.png",
+        "selectedIconPath": "imgs/tabbar/weather_icon_select.png"
+      },
+      {
+        "pagePath": "pages/aboutus/aboutus",
+        "text": "aboutus",
+        "iconPath": "imgs/tabbar/aboutus_icon.png",
+        "selectedIconPath": "imgs/tabbar/aboutus_icon_select.png"
+      }
+    ]
+  }
+}

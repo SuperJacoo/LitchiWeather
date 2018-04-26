@@ -1,0 +1,23 @@
+<!--user.wxml-->
+<view class="container">
+  <view class="normal_weather">
+    <view>
+      <view>
+        <view class='cond_txt_title'>
+          <text class='title'>●</text>
+          <text>　天气数据</text>
+        </view>
+        <view class='cond_txt_1'>
+          <text>荔枝天气在此特别感谢和风天气提供实况天气天气数据</text>
+        </view>
+        <view class='cond_txt_title'>
+          <text class='title'>●</text>
+          <text>　地图数据</text>
+        </view>
+        <view class='cond_txt_1'>
+          <text>荔枝天气在此特别感谢高德地图提供地图数据支持</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,159 @@
+/**index.wxss**/
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  box-sizing: border-box;
+}
+
+.weather {
+  height: 110px;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  color: #666;
+  display: flex;
+  text-align: center;
+  padding: 20px 30px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.now_weather {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  color: #666;
+  display: flex;
+  font-size: 14px;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.normal_weather {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  color: #666;
+  display: flex;
+  font-size: 14px;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.swiper_weather {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  color: #666;
+  display: flex;
+  font-size: 14px;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.weather>view, .now_weather>view {
+  flex: 1;
+}
+
+.weather>view>view, .now_weather>view>view {
+  margin: 5px 0;
+}
+
+.yesterday {
+  background-color: #fff;
+}
+
+.today {
+  background-color: #fff;
+}
+
+.tomorrow {
+  background-color: #fff;
+}
+
+.location, .cond_txt {
+  font-size: 14px;
+}
+
+.cond_txt_title {
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+
+.cond_txt_text {
+  font-size: 14px;
+  margin-bottom: 3px;
+  color: #333;
+}
+
+.cond_txt_text_content {
+  font-size: 14px;
+  margin-bottom: 3px;
+  color: #62646e;
+}
+
+.date, .tmp {
+  font-weight: bold;
+}
+
+.now_tmp {
+  font-size: 40px;
+}
+
+.weather_icon {
+  text-align: center;
+  height: 65px;
+}
+
+.weather_icon image {
+  width: 75px;
+  height: 65px;
+}
+
+.lastUpdateDate {
+  font-size: 10px;
+  text-align: center;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin: 0rpx;
+  margin-bottom: 10px;
+}
+
+.swiper .wx-swiper-dots.wx-swiper-dots-horizontal {
+  margin-bottom: 2rpx;
+}
+
+.swiper .wx-swiper-dot {
+  margin-top: 10rpx;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.swiper .wx-swiper-dot::before {
+  flex-grow: 1;
+  background: rgba(240,0,0,0.8);
+}
+
+.swiper .wx-swiper-dot-active::before {
+  background: rgba(255,215,0,0.8);
+}
+
+text.title{
+  list-style-type: disc;
+  color: #FFD700
+}

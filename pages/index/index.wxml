@@ -1,0 +1,112 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="now_weather">
+    <view>
+      <view style='height:65px' class='now_tmp'>{{now.tmp}} ℃</view>
+      <view class='location'>↑ {{today.tmp_max}} ℃　　↓ {{today.tmp_min}} ℃</view>
+      <view class='cond_txt'>实时天气状况</view>
+      <view class='cond_txt' style=''>{{now.cond_txt}}</view>
+    </view>
+    <view>
+      <view class='weather_icon'>
+        <image src='{{todyIcon}}'></image>
+        <view class='location'>{{now_basic.parent_city}}{{now_basic.location}}</view>
+        <view style='margin: 5px 0;' class='cond_txt'>风力</view>
+        <view style='margin: 5px 0;' class='cond_txt'>{{now.wind_sc}}级</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="swiper" bindtap="lifestyleDetail">
+    <swiper style='height:60px' indicator-dots="{{indicatorDots}}" vertical="{{vertical}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <swiper-item>
+        <block>
+          <view class="normal_weather" style="transform:translateX(0.5px);">
+            <view>
+              <view style='position:absolute;left:30px;' class='cond_txt_title'><text class='title'>●</text> 风向
+                <text class='cond_txt_text_content'>　 {{now.wind_dir}}</text>
+              </view>
+            </view>
+            <view>
+              <view style='position:absolute;right:30px;' class='cond_txt_title'><text class='title'>●</text> 风力
+                <text class='cond_txt_text_content'>　 {{now.wind_sc}}</text>
+              </view>
+            </view>
+          </view>
+        </block>
+      </swiper-item>
+      <swiper-item>
+        <block>
+          <view class="normal_weather" style="transform:translateX(0.5px);">
+            <view>
+              <view style='position:absolute;left:30px;' class='cond_txt_title'><text class='title'>●</text> 空气质量
+                <text class='cond_txt_text_content'>　 {{air_now_city.qlty}}</text>
+              </view>
+            </view>
+            <view>
+              <view style='position:absolute;right:30px;' class='cond_txt_title'><text class='title'>●</text> pm2.5
+                <text class='cond_txt_text_content'>　 {{air_now_city.pm25}}</text>
+              </view>
+            </view>
+          </view>
+        </block>
+      </swiper-item>
+      <swiper-item>
+        <block>
+          <view class="normal_weather" style="transform:translateX(0.5px);">
+            <view>
+              <view style='position:absolute;left:30px;' class='cond_txt_title'><text class='title'>●</text> 体感温度
+                <text class='cond_txt_text_content'>　 {{now.fl}} ℃</text>
+              </view>
+            </view>
+            <view>
+              <view style='position:absolute;right:30px;' class='cond_txt_title'><text class='title'>●</text> 能见度
+                <text class='cond_txt_text_content'>　 {{now.vis}} km</text>
+              </view>
+            </view>
+          </view>
+        </block>
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <view class="weather yesterday">
+    <view>
+      <text>今天</text>
+      <view class='tmp'>{{today.tmp_min}} ℃~{{today.tmp_max}} ℃</view>
+      <view class='cond_txt'>{{today.cond_txt_d}}</view>
+    </view>
+    <view>
+      <view class='weather_icon'>
+        <image src='{{todyIcon}}'></image>
+      </view>
+    </view>
+  </view>
+  <view class="weather today">
+    <view>
+      <text>明天</text>
+      <view class='tmp'>{{tomorrow.tmp_min}} ℃~{{tomorrow.tmp_max}} ℃</view>
+      <view class='cond_txt'>{{tomorrow.cond_txt_d}}</view>
+    </view>
+    <view>
+      <view class='weather_icon'>
+        <image src='{{tomorrowIcon}}'></image>
+      </view>
+    </view>
+  </view>
+  <view class="weather tomorrow">
+    <view>
+      <text>后天</text>
+      <view class='tmp'>{{afterTomor.tmp_min}} ℃~{{afterTomor.tmp_max}} ℃</view>
+      <view class='cond_txt'>{{afterTomor.cond_txt_d}}</view>
+    </view>
+    <view>
+      <view class='weather_icon'>
+        <image src='{{afterTomorIcon}}'></image>
+      </view>
+    </view>
+  </view>
+  <view class="now_weather">
+    <canvas canvas-id="lineGraph" class="canvas" style="transform: scale(0.9);height:250px;width:100%;"></canvas>
+  </view>
+</view>

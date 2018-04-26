@@ -1,0 +1,22 @@
+<view class="container">
+  <view class='flex-item'>
+
+  </view>
+
+  <view class="map_container">
+    <view class="map-tab-li {{item.id == status ? 'active' : ''}}" bindtap="getType" data-type="{{item.id}}" wx:key="aroundListId" wx:for="{{aroundList}}">{{item.name}}</view>
+    <map class="map" id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" show-location="true"></map>
+    <view class="map-tab-bar map-foot {{isShow ? '' : 'map-hide'}}">
+      <view class="map-name">{{name}}</view>
+      <view class="map-address">{{address}}</view>
+    </view>
+  </view>
+
+  <view class='city_info background'>
+    <view>
+      <text class="cond_txt_text">{{textData.name}}</text>
+      <text class="cond_txt_text">{{textData.desc}}</text>
+    </view>
+  </view>
+
+</view>

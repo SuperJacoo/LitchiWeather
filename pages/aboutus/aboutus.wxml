@@ -1,0 +1,30 @@
+<!--user.wxml-->
+<view class="container">
+  <view class="now_weather">
+    <view>
+      <view style='text-align: center;'>
+        <image style='width: 50px;height: 50px;' src='../../imgs/aboutus/logo.jpg'></image>
+        <view class='cond_txt'>荔枝天气 LitchiWeather 1.0</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="normal_weather">
+    <view style='width:100%;'>
+      <view>
+        <view bindtap="useSkillsDetail" class='cond_txt_1'>
+          <text>使用技巧</text>
+          <text class="section_book" style='position:absolute;right:30px;'>></text>
+        </view>
+        <view bindtap="dataFromDetail" class='cond_txt_1'>
+          <text>数据来源</text>
+          <text class="section_book" style='position:absolute;right:30px;'>></text>
+        </view>
+        <view bindtap="aboutMeDetail" class='cond_txt_1'>
+          <text>关于作者</text>
+          <text class="section_book" style='position:absolute;right:30px;'>></text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
